@@ -4,9 +4,8 @@ metadata:
   labels:
     name: notification-ui
   name: notification-ui-route
-  namespace: notification
 spec:
-  host: notification-ui-route-notification.appuiodcs1app.ch
+  host: notification-ui-route-appuio-demo0420.appuioapp.ch
   port:
     targetPort: http
   to:

@@ -5,6 +5,9 @@ metadata:
     app: notification-ui
   name: notification-ui
 spec:
+  resources:
+    limits:
+      cpu: "50m"
   replicas: 1
   revisionHistoryLimit: 2
   selector:

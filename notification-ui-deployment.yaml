@@ -16,6 +16,9 @@ spec:
     spec:
       containers:
         - name: notification-ui
-          image: mathiskretz/notification-ui-oc
+          image: bespinian/notification-ui:1.0.6
           ports:
             - containerPort: 8080
+          env:
+            - name: API_URL
+              value: http://notification-api

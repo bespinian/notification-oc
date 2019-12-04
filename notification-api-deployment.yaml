@@ -16,6 +16,11 @@ spec:
     spec:
       containers:
         - name: notification-api
-          image: mathiskretz/notification-api
+          image: bespinian/notification-api:latest
           ports:
             - containerPort: 3000
+          env:
+            - name: MQ_URL
+              value: amqp://notification-mq
+            - name: DB_URL
+              value: mongodb://notification-db:27017

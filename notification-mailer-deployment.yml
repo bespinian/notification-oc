@@ -25,7 +25,10 @@ spec:
             ]
       containers:
         - name: notification-mailer
-          image: mathiskretz/notification-mailer
+          image: bespinian/notification-mailer:latest
           envFrom:
             - configMapRef:
                 name: notification-mailer-configmap
+          env:
+            - name: MQ_URL
+              value: amqp://notification-mq

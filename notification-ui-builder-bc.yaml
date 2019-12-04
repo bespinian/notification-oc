@@ -3,15 +3,17 @@ kind: BuildConfig
 metadata:
   name: notification-ui-builder
 spec:
+  resources:
+    limits:
+      memory: "512M"
   output:
     to:
       kind: ImageStreamTag
       name: notification-ui-builder:latest
   postCommit: {}
-  resources: {}
   source:
     git:
-      uri: https://github.com/mkretz/notification-ui-oc
+      uri: https://github.com/bespinian/notification-ui-k8s
       ref: master
     type: Git
   strategy:
