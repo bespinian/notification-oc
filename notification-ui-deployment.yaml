@@ -22,3 +22,6 @@ spec:
           env:
             - name: API_URL
               value: http://notification-api
+          resources:
+            limits:
+              cpu: "10m"

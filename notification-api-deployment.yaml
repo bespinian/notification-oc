@@ -24,3 +24,6 @@ spec:
               value: amqp://notification-mq
             - name: DB_URL
               value: mongodb://notification-db:27017
+          resources:
+            limits:
+              cpu: "100m"

@@ -32,3 +32,6 @@ spec:
           env:
             - name: MQ_URL
               value: amqp://notification-mq
+          resources:
+            limits:
+              cpu: "10m"
